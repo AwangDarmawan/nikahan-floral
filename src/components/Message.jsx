@@ -1,5 +1,5 @@
 import  { useEffect, useState } from 'react'
-import { addpesan, DeletePesan, getData } from '../Service/Api'
+import { addpesan, DeletePesan, getData } from '../service/Api'
 import { toast } from "react-toastify";
 import btas from "../assets/Img/batas.png"
 
