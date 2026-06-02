@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cover from "./pages/Cover";
 import Home from "./pages/Home";
-import Adminpage from "./pages/AdminPage";
+import Adminpage from "./pages/Adminpage";
 
 
 
