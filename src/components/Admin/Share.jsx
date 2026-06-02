@@ -3,7 +3,7 @@ export const encodeForShare = (text) => encodeURIComponent(text);
 
 // generate link undangan
 export const generateInvitationLink = (name) =>
-  name ? `http://alpi-ndah.vercel.app/${name.toLowerCase()}` : "";
+  name ? `https://alpi-endah-wedding.vercel.app/${name.toLowerCase()}` : "";
 
 // generate teks undangan lengkap
 export const generateShareText = (name, invitationLink) =>
