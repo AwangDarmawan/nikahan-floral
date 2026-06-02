@@ -72,7 +72,7 @@ function Coverundangan() {
             Kepada, Yth :
           </p>
 
-          <h3 className="text-2xl md:text-4xl font-semibold mt-2 text-[#3E5C93] font-serif">
+          <h3 data-aos="fade-down-right" className="text-2xl md:text-4xl font-semibold mt-2 text-[#3E5C93] font-serif">
             {nama}
           </h3>
         </div>
