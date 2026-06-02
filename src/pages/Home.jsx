@@ -89,7 +89,7 @@ useEffect(() => {
     w-12
     h-12
     rounded-full
-    text-white
+    bg-white
     border
    border-[#3E5C93] 
     flex
