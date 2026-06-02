@@ -45,7 +45,9 @@ export default {
   animation: {
     float: 'float 4s ease-in-out infinite',
   },
-    
+      screens: {
+      xs: '568px',
+    },
   },
   plugins: [],
 }

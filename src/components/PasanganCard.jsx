@@ -45,6 +45,7 @@ export default function PasanganCard({
 
       {/* Nama */}
       <h2
+       data-aos="fade-up-right"
         className="
         mt-8
         font-allura
@@ -52,12 +53,14 @@ export default function PasanganCard({
         md:text-6xl
         text-slate-800
         "
+
       >
         {name}
       </h2>
 
       {/* Orang tua */}
       <p
+       data-aos="fade-up-left"
         className="
         mt-4
         px-4

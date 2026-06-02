@@ -16,13 +16,13 @@ export default function Mengundang({ title, deskripsi }) {
       <h3
         className="
           text-xl
-          md:text-2xl
+          md:text-3xl
           font-bold
-          font-serif
-          text-[#3E5C93]
+          
+          text-white
           mb-5
           text-center
-          
+          font-serif
         "
       >
         {title}
@@ -32,7 +32,8 @@ export default function Mengundang({ title, deskripsi }) {
         className="
           text-sm
           md:text-base
-          text-gray-700
+         text-white
+
           leading-relaxed
         "
       >

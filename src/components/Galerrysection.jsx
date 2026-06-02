@@ -1,3 +1,4 @@
+import Bunga from "./Bunga";
 import { Gallery } from "./Galerry";
 
 export default function Gallerysection() {
@@ -11,6 +12,7 @@ export default function Gallerysection() {
         md:px-8
       "
     >
+      <Bunga/>
       {/* Title */}
       <div className="text-center mb-10">
         <h2
@@ -18,7 +20,7 @@ export default function Gallerysection() {
           className="
          mt-2  text-4xl
          sm:text-6xl
-         md:text-6xl text-slate-800 font-bold lg:text-6xl  font-serif
+         md:text-6xl text-white font-bold lg:text-6xl  font-serif
            "
 
         >

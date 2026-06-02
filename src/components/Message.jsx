@@ -97,8 +97,8 @@ const handleDelete = async (id) => {
 
   return (
     <>
-     <section className="relative min-h-screen overflow-hidden bg-white flex items-center justify-center px-6 py-7">
-     <div className="absolute top-0 left-0 w-full">
+     <section className="relative min-h-screen overflow-hidden bg-white flex items-center justify-center px-6 py-36">
+     <div className="absolute top-0 left-0 w-full ">
                  <img
                    src={btas}
                    alt="floral"
@@ -129,7 +129,7 @@ const handleDelete = async (id) => {
             mb-14
             font-serif"
   >
-    Katakan Sesuatu 
+    Pesan
   </h2>
 </div>
         {/* Form */}

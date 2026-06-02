@@ -1,6 +1,7 @@
 import Endah from "../assets/Img/Endahs.png";
 import PasanganCard from "./PasanganCard";
 import Alpi from "../assets/Img/Alpir.png";
+import Bunga from "./Bunga";
 export default function Pasangan() {
   return (
     <section
@@ -10,14 +11,19 @@ export default function Pasangan() {
       px-6
       bg-white
       overflow-hidden
+      pt-40
+      pb-40
       "
     >
+      <Bunga/>
      <div
   data-aos="fade-up"
   className="max-w-2xl mx-auto text-center"
 >
+  
   <h2
-    data-aos="fade-down-right"
+    data-aos="fade-up-right"
+    data-aos-anchor-placement="top-bottom"
             className="
             text-center
            text-[#3E5C93] 
@@ -33,13 +39,13 @@ export default function Pasangan() {
 
       {/* Mempelai */}
       <div
-        data-aos="zoom-in"
+       
         className="mt-14"
       >
         <PasanganCard
           image={Alpi}
-          name="Alpi Rahman"
-          parent="Putri dari  Bapak   & Ibu  "
+          name="Alpi Rahman (alpi)"
+          parent="Putra ke-5 dari bapak H. agus samsuri (alm) dan ibu ii mulyatu  "
         />
       </div>
 
@@ -60,13 +66,13 @@ export default function Pasangan() {
 
           {/* Mempelai */}
                     <div
-                      data-aos="zoom-in"
+                    
                       className="mt-14"
                     >
                       <PasanganCard
                         image={Endah}
-                        name="Siti Sa'adah"
-                        parent="Putri dari  Bapak Asep Sulaeman & Ibu Ecin "
+                        name="Siti Sa'adah (Ndah)"
+                        parent="Putri ke 3 dari  Bapak Asep Sulaeman & Ibu Ecin "
                       />
                     </div>
       </div>

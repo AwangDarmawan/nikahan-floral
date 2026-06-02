@@ -3,30 +3,38 @@
 import foto1 from "../assets/Img/1.png";
 import foto2 from "../assets/Img/2.png";
 import foto3 from "../assets/Img/3.png";
-
+import foto4 from "../assets/Img/4.png";
 export const Lovestorry = [
   {
     id: 1,
     image: foto1,
     title: "Awal Pertemuan",
-    date: "05 Maret 2024",
+    date: "25 Desember 2022",
     description:
-      "Maret 2024 kami bertemu di satu pekerjaan yang sama. Meski hanya singkat, kami merasa saling tertarik dan ingin mengenal satu sama lain.",
+      "Meski hanya singkat, kami merasa saling tertarik dan ingin mengenal satu sama lain.",
   },
   {
     id: 2,
     image: foto2,
-    title: "Berkomitmen",
-    date: "05 Agustus 2024",
+    title: "Lamaran",
+    date: "09 November 2025",
     description:
-      "Kami membangun hubungan yang erat. Kami saling mendukung dan tumbuh bersama melalui berbagai tantangan.",
+      "Satu langkah lebih dekat menuju janji suci. Pertemuan dua hati yang kini resmi bersemi dalam ikatan khitbah, bersiap merajut masa depan bersama.",
   },
   {
     id: 3,
     image: foto3,
-    title: "Janji Sehidup Semati",
+    title: "Menikah",
+    date: "04 Juni 2026",
+    description:
+      "Di hadapan saksi dan semesta, janji suci akan terucap. Langkah baru dimulai, merajut asa bersama dalam ikatan yang direstui-Nya. Bersama kita melangkah, selamanya",
+  },
+   {
+    id: 3,
+    image: foto4,
+    title: "Resepsi ",
     date: "05 Juli 2026",
     description:
-      "Kami memutuskan untuk mengikat janji suci dan melangkah menuju kehidupan bersama.",
+      "Cinta telah menyatukan kami, dan kini saatnya merayakan kebahagiaan bersama. Kehadiran serta doa restu Anda adalah pelengkap indahnya lembaran baru kehidupan kami.",
   },
 ];

@@ -1,6 +1,6 @@
 import Mengundang from "./Mengundang";
-import bwah from "../assets/Img/bwah.png";
-import btas from "../assets/Img/batas.png";
+
+import Bunga from "./Bunga";
 
 export default function Mengundangsection() {
   return (
@@ -12,36 +12,17 @@ export default function Mengundangsection() {
         px-4
         sm:px-6
         lg:px-8
-        py-24
+        py-36
         md:py-32
       "
     >
       {/* Background Top Floral */}
-                 <div className="absolute top-0 left-0 w-full">
-                   <img
-                     src={btas} 
-                     alt="floral"
-                     className=" w-full   md:h-40
-            lg:h-30
-            xl:h-50
-            object-cover"
-                   />
-                 </div>
-           
-                 <div className="absolute bottom-0 left-0 w-full">
-                   <img
-                     src={bwah}
-                     alt="floral"
-                         className=" w-full md:h-40
-            lg:h-30
-            xl:h-50
-            object-cover"
-                   />
-                 </div>
+          <Bunga/>
 
       {/* Header */}
       <div className="max-w-5xl mx-auto mb-12 text-center  ">
        <h2
+             data-aos="fade-down-right"
             className="
               mt-4
               font-serif
@@ -83,7 +64,8 @@ export default function Mengundangsection() {
           z-10
         "
       >
-        <Mengundang
+        <Mengundang 
+        titleClassName="text-white"
           title="Dari Mempelai Pria"
           deskripsi={
             <ol className="list-decimal pl-5 space-y-2 text-white font-serif font-semibold">
@@ -101,6 +83,8 @@ export default function Mengundangsection() {
         />
 
         <Mengundang
+        className="text-white"
+         titleClassName="text-white"
           title="Dari Mempelai Wanita"
           deskripsi={
             <ol className="list-decimal pl-5 space-y-2  text-white font-serif font-semibold">

@@ -51,15 +51,15 @@ export default function Akad({
           <div className="h-[1px] w-20 md:w-28 bg-white" />
         </div>
 
-        <p className="font-semibold text-sm md:text-lg">
+        <p className="font-semibold text-sm md:text-lg font-serif">
           {date}
         </p>
 
-        <p className="mt-3 font-bold text-base md:text-xl">
+        <p className="mt-3 font-bold text-base md:text-xl font-serif">
           {time}
         </p>
 
-        <p className="mt-4 text-sm md:text-base">
+        <p className="mt-4 text-sm md:text-base font-serif">
           Kediaman Mempelai Wanita
         </p>
 
@@ -71,6 +71,7 @@ export default function Akad({
             max-w-lg
             mx-auto
             leading-relaxed
+            font-serif
           "
         >
           {location}
@@ -93,6 +94,7 @@ export default function Akad({
             hover:bg-white
             hover:text-[#3E5C93]
             transition-all
+            font-serif
           "
         >
           <FaMapMarkerAlt />

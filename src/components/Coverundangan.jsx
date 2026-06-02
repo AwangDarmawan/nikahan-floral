@@ -1,33 +1,19 @@
 import { FaEnvelopeOpen } from "react-icons/fa";
-import bwah from "../assets/Img/bwah.png"
-import btas from "../assets/Img/batas.png"
+
 import { useNavigate } from "react-router-dom";
+import Bunga from "./Bunga";
+import { useParams } from "react-router-dom";
 
 
 function Coverundangan() {
    const navigate = useNavigate();
+   const { nama } = useParams();
 
   return (
     <>
-      <section className="relative min-h-screen overflow-hidden bg-white flex items-center justify-center px-6">
+      <section className="relative min-h-screen overflow-hidden bg-white flex items-center justify-center px-6 py-10  pt-10 pb-5  ">
       {/* Background Top Floral */}
-      <div className="absolute top-0 left-0 w-full">
-        <img
-          src={btas}
-          alt="floral"
-              className="w-full
-      object-cover"
-        />
-      </div>
-
-      <div className="absolute bottom-0 left-0 w-full">
-        <img
-          src={bwah}
-          alt="floral"
-              className=" w-full
-      object-cover"
-        />
-      </div>
+      <Bunga/>
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-xl mx-auto">
@@ -50,7 +36,7 @@ function Coverundangan() {
       text-[110px]
       md:text-[180px]
       
-      text-black
+      text-[#3E5C93]
       relative
       z-10
     "
@@ -64,7 +50,7 @@ function Coverundangan() {
       font-allura
       text-[110px]
       md:text-[180px]
-      text-black
+      text-[#3E5C93]
       -ml-6
       md:-ml-10
     "
@@ -76,7 +62,7 @@ function Coverundangan() {
           The Wedding Of
         </p>
 
-        <h1  data-aos="fade-down" className="mt-2 text-3xl md:text-9xl text-slate-800 font-bold font-allura lg:text-6xl " >
+        <h1  data-aos="fade-down" className="mt-2 text-3xl md:text-9xl text-[#3E5C93] font-bold font-allura lg:text-6xl " >
           Alpi & Ndah
         </h1>
         
@@ -86,12 +72,17 @@ function Coverundangan() {
             Kepada, Yth :
           </p>
 
-          <h3 className="text-2xl md:text-4xl font-semibold mt-2">
-            Awang
+          <h3 className="text-2xl md:text-4xl font-semibold mt-2 text-[#3E5C93] font-serif">
+            {nama}
           </h3>
         </div>
        
-        <button  onClick={() => navigate("/undangan")} data-aos="fade-up"
+        {/* <button  onClick={() => navigate("/undangan")} data-aos="fade-up" */}
+        <button
+          onClick={() => {
+        localStorage.setItem("playMusic", "true");
+        navigate("/undangan");
+         }}
           className="
             mt-8
             inline-flex

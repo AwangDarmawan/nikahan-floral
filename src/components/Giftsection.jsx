@@ -1,8 +1,7 @@
 import { FaGift, FaCopy } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { Gift } from "./Gift";
-import bwah from "../assets/Img/bwah.png"
-import btas from "../assets/Img/batas.png"
+import Bunga from "./Bunga";
 
 export default function Giftsection() {
   const handleCopy = (rekening) => {
@@ -12,29 +11,9 @@ export default function Giftsection() {
   };
 
   return (
-      <section className="relative min-h-screen overflow-hidden bg-white flex items-center justify-center px-6">
+      <section className="relative min-h-screen overflow-hidden bg-white flex items-center justify-center px-6 py-24">
            {/* Background Top Floral */}
-           <div className="absolute top-0 left-0 w-full">
-             <img
-               src={btas} 
-               alt="floral"
-               className=" w-full md:h-40
-      lg:h-30
-      xl:h-50
-      object-cover"
-             />
-           </div>
-     
-           <div className="absolute bottom-0 left-0 w-full">
-             <img
-               src={bwah}
-               alt="floral"
-                   className=" w-full md:h-40
-      lg:h-30
-      xl:h-50
-      object-cover"
-             />
-           </div>
+          <Bunga/>
 
       <div
         className="
@@ -119,7 +98,8 @@ export default function Giftsection() {
                   text-xl
                   md:text-2xl
                   font-semibold
-                  text-slate-800
+                  text-[#3E5C93]
+                  font-serif
                 "
               >
                 {item.name}
@@ -131,7 +111,8 @@ export default function Giftsection() {
                   text-sm
                   md:text-base
                   tracking-wider
-                  text-gray-600
+                  text-[#3E5C93]
+                  font-serif font-semibold
                 "
               >
                 {item.number}
@@ -153,6 +134,7 @@ export default function Giftsection() {
                   md:text-base
                   hover:bg-[#2f4d82]
                   transition
+                  font-serif
                 "
               >
                 <FaCopy />

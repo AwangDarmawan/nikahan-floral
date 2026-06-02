@@ -1,9 +1,21 @@
+import Bunga from "./Bunga";
 import { Lovestorry } from "./Lovestorry";
 
 export default function Lovesection() {
   return (
-    <section className=" py-16 px-5">
+    <section className="relative
+        overflow-hidden
+        bg-white
+        px-4
+        sm:px-6
+        lg:px-8
+        py-36
+        md:py-32
+        pb-60">
+      <Bunga/>
       <div className="max-w-6xl mx-auto">
+
+
         {/* Title */}
         <h2
           data-aos="fade-down"
@@ -21,7 +33,7 @@ export default function Lovesection() {
         </h2>
 
         {/* Timeline */}
-        <div className="space-y-14">
+        <div className="space-y-14 ">
           {Lovestorry.map((story, index) => (
             <div
               key={story.id}
@@ -64,13 +76,14 @@ export default function Lovesection() {
                 </div>
 
                 {/* Text */}
-                <div className="flex-1  text-[#3E5C93] ">
+                <div className="flex-1  text-[#3E5C93] font-serif font-semibold ">
                   <h3
                     className="
                       text-3xl
                       md:text-4xl
                       font-bold
                       leading-tight
+                      font-serif 
                     "
                   >
                     Episode {story.id}: <br />
@@ -90,6 +103,7 @@ export default function Lovesection() {
                   leading-relaxed
                   text-base
                   md:text-lg
+                  font-serif font-semibold
                 "
               >
                 {story.description}

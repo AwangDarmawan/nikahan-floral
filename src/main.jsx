@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 AOS.init({
   duration: 1000,
   once: true,
+    offset: 50,
 });
 createRoot(document.getElementById('root')).render(
   <StrictMode>

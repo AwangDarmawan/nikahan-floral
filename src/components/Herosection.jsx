@@ -1,7 +1,6 @@
 import Countdown from "../components/Countdown";
 import pasangan from "../assets/Img/potowedding.png";
-import bwah from "../assets/Img/bwah.png"
-import btas from "../assets/Img/batas.png"
+import Bunga from "./Bunga";
 
 export default function HeroSection() {
   return (
@@ -18,31 +17,7 @@ export default function HeroSection() {
       "
     >
        {/* Background Top Floral */}
-           <div className="absolute top-0 left-0 w-full">
-             <img
-               src={btas}
-               alt="floral"
-               className="w-full
-      h-24
-      sm:h-32
-      md:h-40
-      lg:h-52
-      xl:h-64
-      object-cover"
-             />
-           </div>
-     
-           <div className="absolute bottom-0 left-0 w-full">
-             <img
-               src={bwah}
-               alt="floral"
-               className="w-full
-      md:h-40
-      lg:h-30
-      xl:h-50
-      object-cover"
-             />
-           </div>
+           <Bunga/>
 
       <div
         className="
@@ -84,7 +59,7 @@ export default function HeroSection() {
           font-allura
           text-5xl
           md:text-6xl
-          text-slate-700
+          text-[#3E5C93]
           font-bold"
         >
           Alpi & Ndah

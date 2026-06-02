@@ -1,27 +1,13 @@
 import Akad from "./Akad";
-import bwah from "../assets/Img/bwah.png"
-import btas from "../assets/Img/batas.png"
+
+import Bunga from "./Bunga";
 
 
 export default function Akadsection() {
   return (
         <section className="relative min-h-screen  overflow-hidden bg-white flex items-center justify-center px-7 py-3">
-                      {/* Background Top Floral */}
-                      <div className="absolute top-0 left-0 w-full">
-                        <img
-                          src={btas}
-                          alt="floral"
-                          className="w-full object-cover"
-                        />
-                      </div>
-                
-                      <div className="absolute bottom-0 left-0 w-full">
-                        <img
-                          src={bwah}
-                          alt="floral"
-                          className="w-full object-cover"
-                        />
-                      </div>
+         {/* Background Top Floral */}
+          <Bunga/>
         
       <div
         className="

@@ -1,32 +1,12 @@
-import bwah from "../assets/Img/bwah.png"
-import btas from "../assets/Img/batas.png"
+
+import Bunga from "./Bunga"
 
 function Kata() {
   return (
     <>
          <section className="relative min-h-screen overflow-hidden bg-white flex items-center justify-center px-6">
               {/* Background Top Floral */}
-              <div className="absolute top-0 left-0 w-full">
-                <img
-                  src={btas}
-                  alt="floral"
-                      className="w-full md:h-40
-      lg:h-30
-      xl:h-50
-      object-cover"
-                />
-              </div>
-        
-              <div className="absolute bottom-0 left-0 w-full">
-                <img
-                  src={bwah}
-                  alt="floral"
-                      className=" w-full md:h-40
-      lg:h-30
-      xl:h-50
-      object-cover"
-                />
-              </div>
+              <Bunga/>
 
               
       {/* Content */}
@@ -50,7 +30,7 @@ function Kata() {
       text-[110px]
       md:text-[180px]
       
-      text-black
+      text-[#3E5C93]
       relative
       z-10
     "
@@ -64,7 +44,7 @@ function Kata() {
       font-allura
       text-[110px]
       md:text-[180px]
-      text-black
+      text-[#3E5C93]
       -ml-6
       md:-ml-10
     "
