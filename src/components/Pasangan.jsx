@@ -72,7 +72,7 @@ export default function Pasangan() {
                       <PasanganCard
                         image={Endah}
                         name="Siti Sa'adah (Ndah)"
-                        parent="Putri ke 3 dari  Bapak Asep Sulaeman & Ibu Ecin "
+                        parent="Putri ke 3 dari  Bapak Asep Sulaeman & Ibu Ecin Kuraesin "
                       />
                     </div>
       </div>

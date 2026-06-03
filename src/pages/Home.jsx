@@ -8,23 +8,16 @@ import Giftsection from "../components/Giftsection";
 import Message from "../components/Message";
 import Mengundangsection from "../components/Mengundangsection";
 // import  { useEffect, useRef } from "react";
-import musik from "../assets/CINTA.mp3"
+import musik from "../assets/lagu.mp3"
 import { useEffect, useRef, useState } from "react";
 
 
 export default function Home() {
-  
-  // const audioRef = useRef(null);
+
   const audioRef = useRef(null);
 const [isPlaying, setIsPlaying] = useState(false);
 
-// useEffect(() => {
-//   const shouldPlay = localStorage.getItem("playMusic");
 
-//   if (shouldPlay === "true") {
-//     audioRef.current?.play().catch(() => {});
-//   }
-// }, []);
 useEffect(() => {
   const shouldPlay = localStorage.getItem("playMusic");
 
@@ -45,32 +38,7 @@ useEffect(() => {
      <Giftsection/>
      <Message/>
      <Mengundangsection/>
-       {/* <button
-  onClick={() => {
-    if (audioRef.current.paused) {
-      audioRef.current.play();
-      "🎵"
-    } else {
-      audioRef.current.pause();
-      "❌"
-    }
-  }}
-  className="
-    fixed
-    bottom-5
-    right-5
-    z-50
-    w-12
-    h-12
-    rounded-full
-    border
-    border-[#3E5C93] 
-    text-white
-    shadow-2xl
-  "
->
-  🎵
-</button> */}
+  
 <button
   onClick={() => {
     if (audioRef.current.paused) {

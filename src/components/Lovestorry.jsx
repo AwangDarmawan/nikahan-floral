@@ -30,7 +30,7 @@ export const Lovestorry = [
       "Di hadapan saksi dan semesta, janji suci akan terucap. Langkah baru dimulai, merajut asa bersama dalam ikatan yang direstui-Nya. Bersama kita melangkah, selamanya",
   },
    {
-    id: 3,
+    id: 4,
     image: foto4,
     title: "Resepsi ",
     date: "05 Juli 2026",

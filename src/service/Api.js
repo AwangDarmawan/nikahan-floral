@@ -1,55 +1,47 @@
-import axios from "axios";
-import { toast } from "react-toastify";
-const baseUrl = import.meta.env.VITE_BASE_URL;
-console.log("Base URL:", baseUrl);
+// import { supabase } from "../lib/supabase";
 
+/*
+====================================
+AMBIL SEMUA DATA
+====================================
+*/
 
-export const getData = async () => {
-    try {
-      const response = await axios.get(`${baseUrl}/wedding`);
-      console.log("test",response.data)
-      console.log(baseUrl)
-      return response.data;
-    } catch (error) {
-        toast.error(error.response.data.message);
-    }
-  };
+import { supabase } from "../lib/supabase";
 
-  export const addpesan = async (formData) => {
-    try {
-      // Memastikan nilai attendance valid
-      if (!['yes', 'maybe', 'no'].includes(formData.attendance)) {
-        toast.error("Attendance value is invalid.");
-        return;
-      }
+/*
+==================================
+GET DATA WEDDING
+==================================
+*/
+export const getWedding = async () => {
+  console.log("=== GET DATA DIMULAI ===");
+
+  const { data, error } = await supabase
+    .from("wedding")
+    .select("*")
+    .order("id", { ascending: false });
+
+  console.log("DataSupabase:", data);
+  console.log("Error dari Supabase:", error);
+
+  if (error) {
+    throw error;
+  }
+
+  console.log("=== GET DATA SELESAI ===");
+
+  return data;
+};
   
-      const response = await axios.post(`${baseUrl}/wedding`, formData);
-      toast.success("berhasil");
-      return response.data;
-    } catch (error) {
-      toast.error("An error occurred while submitting.");
-      throw error;
-    }
-  };
+/*
+====================================
+TAMBAH PESAN
+====================================
+*/
 
-  // export const DeletePesan = async (id) => {
-  //   try {
-  //     const response = await axios.delete(`${baseUrl}/wedding/${id}`)
-  //     toast.success("data berhasil di hapus")
-  //     return response.data;
-  //   } catch (error) {
-  //     throw error;
-  //   }
-  // };
 
-  
-  export const DeletePesan = async (id) => {
-    try {
-      const response = await axios.delete(`${baseUrl}/wedding/${id}`)
-      toast.success("data berhasil di hapus")
-      return response.data;
-    } catch (error) {
-      toast.error("An error occurred while submitting.");
-      throw error;
-    }
-  };
+/*
+====================================
+HAPUS PESAN
+====================================
+*/

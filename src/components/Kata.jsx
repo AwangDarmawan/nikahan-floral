@@ -53,8 +53,16 @@ function Kata() {
     N
   </span>
   </div>
-    <p className="mt-12 text-sm md:text-base text-gray-700 font-serif font-semibold  ">
-         "Bismillahirrahmanirrahim. Ya Allah, dengan segala kesucian hati, kami memohon ridho-Mu untuk menuju sunnah Rasul-Mu, membentuk keluarga yang sakinah, mawaddah, warahmah. Kami mengundang Bapak/Ibu/Saudara/i untuk hadir memberikan doa restu pada pernikahan putra-putri kami.
+
+  <p className="mt-12 text-sm md:text-base text-gray-700 font-serif  ">
+         "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir." QS Ar Rum : 21
+        </p>
+    <p className="mt-12 text-sm md:text-base text-gray-700 font-serif  ">
+       
+          
+         "Bismillahirrahmanirrahim. Ya Allah, dengan segala kesucian hati, kami memohon ridho-Mu untuk menuju sunnah Rasul-Mu, membentuk keluarga yang sakinah, mawaddah, warahmah. Kami mengundang Bapak/Ibu/Saudara/i untuk hadir memberikan doa restu pada pernikahan putra-putri kami."
+
+         
         </p>
 
   </div>

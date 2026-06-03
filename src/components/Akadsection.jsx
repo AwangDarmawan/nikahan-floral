@@ -18,7 +18,7 @@ export default function Akadsection() {
       >
         <Akad
           title="Akad Nikah"
-          date="Minggu, 04 Juni 2026"
+          date="Kamis, 04 Juni 2026"
           time="10.00 WIB s/d Selesai"
           location="Kp. Halimun, RT003/RW004, Desa Warudoyong, Kec. Cikalongkulon, Kab. Cianjur"
           mapsLink="https://www.google.com/maps?q=-6.7095556,107.2343388&z=17&hl=id"
