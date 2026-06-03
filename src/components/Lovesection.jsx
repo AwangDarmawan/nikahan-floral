@@ -104,6 +104,7 @@ export default function Lovesection() {
                   text-base
                   md:text-lg
                   font-serif font-semibold
+                  
                 "
               >
                 {story.description}

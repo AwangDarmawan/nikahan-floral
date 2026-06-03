@@ -14,6 +14,7 @@ export default function Mengundang({ title, deskripsi }) {
       "
     >
       <h3
+        data-aos="fade-up-right"
         className="
           text-xl
           md:text-3xl

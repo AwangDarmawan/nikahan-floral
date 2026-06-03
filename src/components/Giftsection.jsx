@@ -38,6 +38,7 @@ export default function Giftsection() {
           />
 
           <h2
+          data-aos="fade-down-left"
             className="
               mt-4
               font-serif
@@ -58,7 +59,8 @@ export default function Giftsection() {
               text-gray-600
               max-w-xl
               mx-auto
-            "
+              font-semibold
+              font-serif "
           >
             Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
             Namun jika memberi adalah ungkapan tanda kasih, Anda dapat
@@ -84,11 +86,11 @@ export default function Giftsection() {
                 alt="bank"
                 className="
                   h-12
-    sm:h-14
-    md:h-16
-    lg:h-20
-    w-auto
-    object-contain
+                sm:h-14
+                md:h-16
+               lg:h-20
+               w-auto
+               object-contain
                 "
               />
 

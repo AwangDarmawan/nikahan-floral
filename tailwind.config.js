@@ -30,9 +30,19 @@ export default {
         '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
         '4xl': '0 100px 200px rgba(182, 97, 176, 0.8)',
       },
-  
+   
     },
+
     keyframes: {
+      typing: {
+      from: { width: '0' },
+      to: { width: '100%' },
+    },
+    blink: {
+      '50%': {
+        borderColor: 'transparent',
+      },
+    },
     float: {
       '0%, 100%': {
         transform: 'translateY(0px)',
@@ -43,6 +53,7 @@ export default {
     },
   },
   animation: {
+    typing:'typing 10s steps(100, end), blink .8s step-end infinite',
     float: 'float 4s ease-in-out infinite',
   },
       screens: {
@@ -51,4 +62,3 @@ export default {
   },
   plugins: [],
 }
-

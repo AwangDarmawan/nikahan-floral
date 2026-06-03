@@ -33,6 +33,7 @@ function Kata() {
       text-[#3E5C93]
       relative
       z-10
+      
     "
   >
     A
@@ -52,7 +53,7 @@ function Kata() {
     N
   </span>
   </div>
-    <p className="mt-12 text-sm md:text-base text-gray-700 font-serif font-semibold">
+    <p className="mt-12 text-sm md:text-base text-gray-700 font-serif font-semibold  ">
          "Bismillahirrahmanirrahim. Ya Allah, dengan segala kesucian hati, kami memohon ridho-Mu untuk menuju sunnah Rasul-Mu, membentuk keluarga yang sakinah, mawaddah, warahmah. Kami mengundang Bapak/Ibu/Saudara/i untuk hadir memberikan doa restu pada pernikahan putra-putri kami.
         </p>
 

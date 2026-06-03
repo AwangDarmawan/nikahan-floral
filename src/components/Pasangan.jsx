@@ -45,7 +45,7 @@ export default function Pasangan() {
         <PasanganCard
           image={Alpi}
           name="Alpi Rahman (alpi)"
-          parent="Putra ke-5 dari bapak H. agus samsuri (alm) dan ibu ii mulyatu  "
+          parent="Putra ke-5 dari bapak H. agus samsuri (alm) dan ibu ii mulyati "
         />
       </div>
 

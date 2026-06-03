@@ -1,19 +1,19 @@
 // src/data/giftData.js
 
 import BCA from "../assets/Img/baca.png";
-import Dana from "../assets/Img/dana.png";
+import Sea from "../assets/Img/Sea.png";
 
 export const Gift = [
   {
     id: 1,
     bank: BCA,
     name: "Siti Saadah",
-    number: "00234567888",
+    number: "1832032136",
   },
   {
     id: 2,
-    bank: Dana,
+    bank: Sea,
     name: "Alpi Rahman",
-    number: "083125307355",
+    number: "901003858252",
   },
 ];

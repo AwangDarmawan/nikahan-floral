@@ -45,13 +45,14 @@ export default function PasanganCard({
 
       {/* Nama */}
       <h2
-       data-aos="fade-up-right"
+      //  data-aos="fade-up-right"
         className="
         mt-8
         font-allura
         text-4xl
         md:text-6xl
         text-slate-800
+        
         "
 
       >

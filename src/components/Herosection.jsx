@@ -61,6 +61,11 @@ export default function HeroSection() {
           md:text-6xl
           text-[#3E5C93]
           font-bold"
+          overflow-hidden
+   
+    border-r-2
+    border-black
+    animate-typing
         >
           Alpi & Ndah
         </h1>
@@ -76,7 +81,7 @@ export default function HeroSection() {
           font-semibold
           "
         >
-          05 Juli 2026
+         Minggu, 05 Juli 2026
         </p>
 
         {/* Countdown */}

@@ -70,14 +70,14 @@ export default function Mengundangsection() {
           deskripsi={
             <ol className="list-decimal pl-5 space-y-2 text-white font-serif font-semibold">
               <li>Bpk. KH. Jaenal Abidin (Sesepuh Ponpes Nurul Huda)</li>
-    <li>Bpk. Ust. Uus</li>
-    <li>Bpk. Dadang Saputra (Kepala Desa Padajaya)</li>
-    <li>Bpk. Aman (Ua)</li>
-    <li>Bpk. Agus (Paman)</li>
-    <li>Ibu Neng Alin (Kakak)</li>
-    <li>Ibu Reni Restu Utami (Kakak)</li>
-    <li>Ibu Ai Siti Rohaeti (Kakak)</li>
-    <li>Ibu Eka Restu Senja (Kakak)</li>
+               <li>Bpk. Ust. Uus</li>
+               <li>Bpk. Dadang Saputra (Kepala Desa Padajaya)</li>
+               <li>Bpk. Aman (Ua)</li>
+               <li>Bpk. Agus (Paman)</li>
+               <li>Ibu Neng Alin (Kakak)</li>
+               <li>Ibu Reni Restu Utami (Kakak)</li>
+               <li>Ibu Ai Siti Rohaeti (Kakak)</li>
+               <li>Ibu Eka Restu Senja (Kakak)</li>
             </ol>
           }
         />
@@ -89,20 +89,23 @@ export default function Mengundangsection() {
           deskripsi={
             <ol className="list-decimal pl-5 space-y-2  text-white font-serif font-semibold">
                <li>Keluarga Besar Bapak Jeje (Alm.) & Ibu Lilis (Almh.)</li>
-    <li>Keluarga Besar Bapak Ombi & Umi Cucum (Almh.)</li>
-    <li>Bapak Yayan Karnayan (Paman)</li>
-    <li>Bapak Saefulloh (Paman)</li>
+    <li>Keluarga Besar Bpk Ombi &  Ibu Umi Cucum (Almh.)</li>
+    <li>Bpk Yayan Karnayan (Paman)</li>
+    <li>Bpk Saefulloh (Paman)</li>
     <li>Endang Kamaludin (Kakak)</li>
     <li>M. Irfan Jafar Sidik (Kakak)</li>
-    <li>Bapak H. Mamad M. Jaelani, S.Ag. (Kakek)</li>
-    <li>Bapak H. Ujang Iskandar (Ua)</li>
-    <li>Bapak Solihin (Paman)</li>
-    <li>Keluarga Bapak Bunyamin & Ibu Didah</li>
-    <li>Bapak Pepen (Paman)</li>
-    <li>Bapak Ade (Paman)</li>
-    <li>Bapak Imam Darmawan (Kakak)</li>
-    <li>Bapak Deden Iskandar (Kakak)</li>
-            </ol>
+    <li>Bpk H. Mamad M. Jaelani, S.Ag. (Kakek)</li>
+    <li>Bpk H. Ujang Iskandar (Ua)</li>
+    <li>Bpk Solihin (Paman)</li>
+    <li>Keluarga Bpk Bunyamin & Ibu Didah</li>
+    <li>Bpk Pepen (Paman)</li>
+    <li>Bpk Ade (Paman)</li>
+    <li>Bpk Imam Darmawan (Kakak)</li>
+    <li>Bpk Deden Iskandar (Kakak)</li>
+    <li>Bpk Dede (Paman)</li>
+    <li>Bpk Muhidin (Paman)</li>
+    <li>Bpk Permana Ruslandi (Paman)</li>
+  </ol>
           }
         />
       </div>

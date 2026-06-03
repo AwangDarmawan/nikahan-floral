@@ -79,6 +79,7 @@ function Coverundangan() {
        
         {/* <button  onClick={() => navigate("/undangan")} data-aos="fade-up" */}
         <button
+        data-aos="fade-up"
           onClick={() => {
         localStorage.setItem("playMusic", "true");
         navigate("/undangan");
