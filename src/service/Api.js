@@ -1,47 +1,68 @@
-// import { supabase } from "../lib/supabase";
-
-/*
-====================================
-AMBIL SEMUA DATA
-====================================
-*/
-
 import { supabase } from "../lib/supabase";
 
 /*
-==================================
+====================================
 GET DATA WEDDING
-==================================
+====================================
 */
-export const getWedding = async () => {
-  console.log("=== GET DATA DIMULAI ===");
-
+export async function getData() {
   const { data, error } = await supabase
     .from("wedding")
-    .select("*")
-    .order("id", { ascending: false });
-
-  console.log("DataSupabase:", data);
-  console.log("Error dari Supabase:", error);
+    .select("*");
+    console.log("data",data)
 
   if (error) {
     throw error;
   }
 
-  console.log("=== GET DATA SELESAI ===");
-
   return data;
-};
-  
+}
+ 
 /*
 ====================================
 TAMBAH PESAN
 ====================================
+
 */
+export async function createData(payload) {
+  const { data, error } = await supabase
+    .from("wedding")
+    .insert([payload])
+    .select();
+
+  if (error) throw error;
+
+  return data;
+}
+
+/*
+====================================
+HAPUS PESAN DI ADMIN
+====================================
+
+*/
+export async function deleteData(id) {
+  const { error } = await supabase
+    .from("wedding")
+    .delete()
+    .eq("id", id);
+
+  if (error) throw error;
+
+  return true;
+}
 
 
 /*
 ====================================
-HAPUS PESAN
+DELETE SEMUA DATA di admin
 ====================================
 */
+export async function deleteAllData() {
+  const { error } = await supabase
+    .from("wedding")
+    .delete()
+    .neq("id", 0);
+
+  if (error) throw error;
+}

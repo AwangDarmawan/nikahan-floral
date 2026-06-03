@@ -1,10 +1,66 @@
 
+import { useEffect, useState } from "react";
 import btas from "../assets/Img/batas.png";
+import { createData, getData } from "../service/Api";
 
 
 
 function Message() {
+  const [datas, setDatas] = useState([]);
+  const [nama, setNama] = useState("");
+  const [pesan, setPesan] = useState("");
+  const [kehadiran, setKehadiran] = useState("");
+  
 
+  const fetchData = async () => {
+  try {
+    const data = await getData();
+    setDatas(data || []);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+  useEffect(() => {
+    
+
+    fetchData();
+  }, []);
+
+   // Simpan data
+  const handleSubmit = async () => {
+    try {
+      if (!nama || !pesan || !kehadiran) {
+        alert("Lengkapi semua data terlebih dahulu");
+        return;
+      }
+
+      const payload = {
+        nama,
+        pesan,
+        kehadiran,
+      };
+      
+    
+      await createData(payload);
+
+      // refresh data
+      await fetchData();
+
+      // reset form
+      setNama("");
+      setPesan("");
+      setKehadiran("");
+
+      // refresh data
+      await getData();
+
+      alert("Pesan berhasil dikirim");
+    } catch (error) {
+      console.error(error);
+      alert("Gagal mengirim pesan");
+    }
+  };
   return (
     <section className="relative min-h-screen overflow-hidden bg-white flex items-center justify-center px-6 py-36">
       
@@ -48,22 +104,22 @@ function Message() {
         </div>
 
         {/* Form */}
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
           
           {/* Nama */}
           <div>
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-700 mb-2"
+              className="block text-sm font-medium text-gray-700 mb-2 font-serif"
             >
               *Nama
             </label>
 
             <input
               type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
+              value={nama}
+              onChange={(e) => setNama(e.target.value)}
+              placeholder="Masukan Nama"
               className="
                 w-full
                 px-4
@@ -71,7 +127,7 @@ function Message() {
                 border
                 rounded-lg
                 outline-none
-                text-black
+                text-[#3E5C93]
               "
             />
           </div>
@@ -86,10 +142,12 @@ function Message() {
             </label>
 
             <textarea
-              id="message"
+              rows="message"
               name="message"
               rows="3"
-              placeholder="Write your message here..."
+              value={pesan}
+              onChange={(e) => setPesan(e.target.value)}
+              placeholder="Tulis pesan anda"
               className="
                 w-full
                 px-4
@@ -97,55 +155,60 @@ function Message() {
                 border
                 rounded-lg
                 outline-none
-                text-black
+                text-[#3E5C93]
               "
             />
           </div>
 
           {/* Kehadiran */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              *Kehadiran
-            </label>
-
-            <div className="flex justify-between">
-              
+           <div className="flex gap-6">
               <label className="flex items-center gap-2">
                 <input
                   type="radio"
-                  name="attendance"
-                  value="yes"
+                  name="kehadiran"
+                  value="Ya"
+                  checked={kehadiran === "Ya"}
+                  onChange={(e) =>
+                    setKehadiran(e.target.value)
+                  }
                 />
-                <span>Yes</span>
+                <span>Ya</span>
               </label>
 
               <label className="flex items-center gap-2">
                 <input
                   type="radio"
-                  name="attendance"
-                  value="maybe"
+                  name="kehadiran"
+                  value="Mungkin"
+                  checked={kehadiran === "Mungkin"}
+                  onChange={(e) =>
+                    setKehadiran(e.target.value)
+                  }
                 />
-                <span>Maybe</span>
+                <span>Mungkin</span>
               </label>
 
               <label className="flex items-center gap-2">
                 <input
                   type="radio"
-                  name="attendance"
-                  value="no"
+                  name="kehadiran"
+                  value="Tidak"
+                  checked={kehadiran === "Tidak"}
+                  onChange={(e) =>
+                    setKehadiran(e.target.value)
+                  }
                 />
-                <span>No</span>
+                <span>Tidak</span>
               </label>
-
             </div>
-          </div>
-
           {/* Tombol */}
           <div className="text-center">
             <button
+             onClick={handleSubmit}
               type="button"
               className="
-                bg-[#3E5C93]
+                 bg-[#3E5C93]
+                hover:bg-blue-800
                 text-white
                 px-6
                 py-2
@@ -159,51 +222,84 @@ function Message() {
 
         </form>
 
-        {/* List Pesan Dummy */}
-        <div className="mt-8">
-          <h3 className="text-lg font-bold text-[#3E5C93] mb-4">
-            Pesan
-          </h3>
+      {/* List Pesan */}
+<div className="mt-8">
+  <div className="flex items-center justify-between mb-4">
+    <h3 className="text-lg font-bold text-[#3E5C93]">
+      Pesan
+    </h3>
 
-          <ul className="space-y-4">
-            
-            <li className="flex items-center justify-between bg-pink-50 px-4 py-3 rounded-lg">
-              <div>
-                <p className="font-medium text-gray-700">
-                  Awang
-                </p>
+    <span className="bg-[#3E5C93] text-white px-3 py-1 rounded-full text-sm">
+      {datas.length} Pesan
+    </span>
+  </div>
 
-                <p className="text-gray-500">
-                  Selamat menempuh hidup baru.
-                </p>
-              </div>
-
-              <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
-                Yes
-              </span>
-            </li>
-
-            <li className="flex items-center justify-between bg-pink-50 px-4 py-3 rounded-lg">
-              <div>
-                <p className="font-medium text-gray-700">
-                  Deri
-                </p>
-
-                <p className="text-gray-500">
-                  Semoga menjadi keluarga sakinah.
-                </p>
-              </div>
-
-              <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">
-                No
-              </span>
-            </li>
-
-          </ul>
-        </div>
-
+  <div
+    className="
+      max-h-[400px]
+      overflow-y-auto
+      pr-2
+      space-y-4
+    "
+  >
+    {datas.length === 0 ? (
+      <div className="text-center py-8 text-gray-500">
+        Belum ada pesan
       </div>
-    </section>
+    ) : (
+      datas.map((item) => (
+        <div
+          key={item.id}
+          className="
+            bg-pink-50
+            rounded-xl
+            p-4
+            shadow-sm
+            border
+            border-pink-100
+          "
+        >
+          <div className="flex justify-between items-start gap-3">
+            <div className="flex-1">
+              <p className="font-semibold text-gray-800 break-words">
+                {item.nama}
+              </p>
+
+              <p className="mt-2 text-sm text-gray-600 break-words">
+                {item.pesan}
+              </p>
+            </div>
+
+            <span
+              className={`
+                whitespace-nowrap
+                px-3
+                py-1
+                rounded-full
+                text-xs
+                font-medium
+                ${
+                  item.kehadiran === "Ya"
+                    ? "bg-green-100 text-green-700"
+                    : item.kehadiran === "Mungkin"
+                    ? "bg-yellow-100 text-yellow-700"
+                    : "bg-red-100 text-red-700"
+                }
+              `}
+            >
+              {item.kehadiran}
+            </span>
+          </div>
+        </div>
+      ))
+    )}
+  </div>
+</div>
+</div>
+</section>
+
+         
+         
   );
 }
 
