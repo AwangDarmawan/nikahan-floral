@@ -51,11 +51,24 @@ export default {
         transform: 'translateY(-15px)',
       },
     },
+     borderMove: {
+      '0%': {
+        backgroundPosition: '0% 50%',
+      },
+      '50%': {
+        backgroundPosition: '100% 50%',
+      },
+      '100%': {
+        backgroundPosition: '0% 50%',
+      },
   },
+},
   animation: {
     typing:'typing 10s steps(100, end), blink .8s step-end infinite',
     float: 'float 4s ease-in-out infinite',
+    border: 'borderMove 20s linear infinite',
   },
+  
       screens: {
       xs: '568px',
     },

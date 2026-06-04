@@ -73,8 +73,9 @@ export default function HeroSection() {
           text-sm
           md:text-base
           text-gray-500
-          font-montserrat
+          
           font-semibold
+          font-serif
           "
         >
          Minggu, 05 Juli 2026

@@ -2,7 +2,8 @@ import { useState } from "react";
 import Form from "./Form";
 import Preview from "./Preview";
 import { generateInvitationLink, generateShareText } from "./Share";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import Footer from "../Footer";
+// import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Admin = () => {
   const [name, setName] = useState("");
@@ -34,32 +35,9 @@ const Admin = () => {
           shareText={shareText}
         />
       )}
-      {/* footer */}
-       <div className="text-center mt-8 my-16 py-6 px-5 bg-[#37558D] rounded text-white border-[#37558D] shadow-3xl ">
-            <h1 className="text-sm font-Montserrat font-semibold">
-            Awang Darmawan
-            </h1>
-      
-            <a
-              href="https://wa.me/6283125307355"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex justify-center items-center gap-1 hover:text-green-500"
-            >
-              <FaWhatsapp className="text-2xl my-1" />
-              +6283125307355
-            </a>
-      
-            <a
-              href="https://instagram.com/awng_drmwn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex justify-center items-center gap-1 hover:text-red-500"
-            >
-              <FaInstagram className="text-2xl my-1" />
-              @awng_drmwn
-            </a>
-          </div>
+      {/* /* footer */}
+      <Footer/>
+       
     </div>
   );
 };

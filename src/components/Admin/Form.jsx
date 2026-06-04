@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Form = ({ name, setName, handleSubmit }) => (
   <div className="max-w-3xl w-full bg-white shadow-md rounded-xl p-6">
-    <h2 className="text-2xl font-bold text-[#37558D] text-center mb-6 font-Montserrat">
+    <h2 className="text-2xl font-bold text-[#37558D] text-center mb-6 font-Montserrat" data-aos="fade-up">
       Tambahkan undangan
     </h2>
 
@@ -10,7 +10,7 @@ const Form = ({ name, setName, handleSubmit }) => (
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-medium text-gray-700 mb-2"
+          className="block text-sm  font-serif font-semibold  text-[#37558D] mb-2"
         >
           *Name
         </label>
@@ -20,7 +20,7 @@ const Form = ({ name, setName, handleSubmit }) => (
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Your Name"
+          placeholder="Nama Undangan"
           required
           className="
             w-full
@@ -30,7 +30,7 @@ const Form = ({ name, setName, handleSubmit }) => (
             rounded-lg
             focus:ring-2
             outline-none
-            text-black
+          text-[#3E5C93]
             font-Montserrat
           "
         />

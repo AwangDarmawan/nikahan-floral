@@ -110,7 +110,7 @@ function Message() {
           <div>
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-700 mb-2 font-serif"
+              className="block text-sm  text-[#3E5C93] font-serif font-semibold"
             >
               *Nama
             </label>
@@ -136,7 +136,7 @@ function Message() {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-gray-700 mb-2"
+              className="block text-sm font-semibold text-[#3E5C93] font-serif"
             >
               *Pesan
             </label>
@@ -161,7 +161,14 @@ function Message() {
           </div>
 
           {/* Kehadiran */}
-           <div className="flex gap-6">
+           {/* <div className="flex gap-6"> */}
+            
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+            <label className=" text-[#3E5C93] font-serif font-semibold">
+            *Kehadiran
+           </label>
+
+            <div className="flex flex-wrap gap-4">
               <label className="flex items-center gap-2">
                 <input
                   type="radio"
@@ -219,7 +226,7 @@ function Message() {
               Kirim
             </button>
           </div>
-
+        </div>
         </form>
 
       {/* List Pesan */}

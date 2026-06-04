@@ -7,9 +7,10 @@ import Lovesection from "../components/Lovesection";
 import Giftsection from "../components/Giftsection";
 import Message from "../components/Message";
 import Mengundangsection from "../components/Mengundangsection";
-// import  { useEffect, useRef } from "react";
+
 import musik from "../assets/lagu.mp3"
 import { useEffect, useRef, useState } from "react";
+
 
 
 export default function Home() {

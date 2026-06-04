@@ -1,6 +1,7 @@
 import Mengundang from "./Mengundang";
 
 import Bunga from "./Bunga";
+import Footer from "./Footer";
 
 export default function Mengundangsection() {
   return (
@@ -12,7 +13,7 @@ export default function Mengundangsection() {
         px-4
         sm:px-6
         lg:px-8
-        py-36
+        py-56
         md:py-32
       "
     >
@@ -109,6 +110,8 @@ export default function Mengundangsection() {
           }
         />
       </div>
+
+      <Footer/>
     </section>
   );
 }
