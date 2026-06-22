@@ -80,7 +80,7 @@ function Kata() {
   {/* Divider */}
           <div className="flex items-center justify-center gap-4 my-6" data-aos="fade-up-right">
             <div className="h-[1px] w-20 md:w-28 bg-[#3E5C93]" />
-            <FaHeart className="text-[#3E5C93]"  data-aos="zoom-in-down" />
+            <FaHeart className="text-[#3E5C93]  animate-pulse"  data-aos="zoom-in-down" />
             <div className="h-[1px] w-20 md:w-28  bg-[#3E5C93]" data-aos="fade-down-left" />
           </div>
 

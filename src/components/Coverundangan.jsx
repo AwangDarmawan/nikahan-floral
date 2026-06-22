@@ -58,7 +58,7 @@ function Coverundangan() {
     N
   </span>
          </div>
-        <p className="mt-12 text-sm md:text-base text-gray-700 font-montserrat font-semibold">
+        <p className="mt-12 text-sm md:text-base text-gray-700 italic font-semibold">
           The Wedding Of
         </p>
 
@@ -68,11 +68,11 @@ function Coverundangan() {
         
 
         <div className="mt-10">
-          <p className="text-gray-700 text-base font-semibold">
+          <p className="text-gray-700 text-base font-semibold italic">
             Kepada, Yth :
           </p>
 
-          <h3 data-aos="fade-down-right" className="text-2xl md:text-4xl font-semibold mt-2 text-[#3E5C93] font-serif">
+          <h3 data-aos="fade-down-right" className="text-2xl md:text-4xl  mt-2 text-[#3E5C93] font-semibold italic">
             {nama}
           </h3>
         </div>

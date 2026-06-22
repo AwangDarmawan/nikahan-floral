@@ -76,7 +76,7 @@ export default function Countdown() {
             {String(item.value).padStart(2, "0")}
           </h3>
 
-          <p className="text-xs">
+          <p className="text-xs italic">
             {item.label}
           </p>
         </div>

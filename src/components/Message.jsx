@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
-import btas from "../assets/Img/batas.png";
 import { createData, getData } from "../service/Api";
+import Bunga from "./Bunga";
 
 
 
@@ -64,20 +64,7 @@ function Message() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-white flex items-center justify-center px-6 py-36">
       
-      {/* Background */}
-      <div className="absolute top-0 left-0 w-full">
-        <img
-          src={btas}
-          alt="floral"
-          className="
-            w-full
-            md:h-30
-            lg:h-52
-            xl:h-64
-            object-cover
-          "
-        />
-      </div>
+     <Bunga />
 
       {/* Content */}
       <div className="max-w-3xl w-full mx-auto text-[#3E5C93] shadow-md rounded-xl p-6 bg-white z-10">
@@ -99,7 +86,7 @@ function Message() {
               font-serif
             "
           >
-            Pesan
+            Message
           </h2>
         </div>
 
@@ -163,12 +150,12 @@ function Message() {
           {/* Kehadiran */}
            {/* <div className="flex gap-6"> */}
             
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+            <div className=" sm:flex-row sm:items-center gap-4 sm:gap-6">
             <label className=" text-[#3E5C93] font-serif font-semibold">
             *Kehadiran
            </label>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 font-serif italic ">
               <label className="flex items-center gap-2">
                 <input
                   type="radio"

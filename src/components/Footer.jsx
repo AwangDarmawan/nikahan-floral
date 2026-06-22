@@ -1,67 +1,34 @@
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import {  FaLink } from "react-icons/fa";
 
-function Footer() {
+export default function Footer() {
   return (
-    <div className="relative mt-8 my-16 mx-10 ">
-      {/* Animated Border */}
-    <div
-  className="
-     absolute
-    -inset-[2px]
-    rounded-xl
-    bg-gradient-to-r
-    from-white
-    via-[#37558D]
-    to-white
-    bg-[length:300%_300%]
-    animate-border
-    
-  "
-/>
+    <footer className="mt-10 border-t border-white/10 bg-white/10 text-blue lg:mx-[490px] font-space">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-6  ">
 
-      {/* Content */}
-      <div
-        className="
-          relative
-          text-center
-          py-6
-          px-5
-          text-[#37558D]
-          rounded-xl
-          bg-white
-        "
-      >
-         <h1 data-aos="fade-up-right" className="text-sm font-serif font-semibold">
-          Made By
-        </h1>
-        <h1 data-aos="fade-down-left" className="text-sm font-serif font-semibold">
-          Awang Darmawan
-        </h1>
+        {/* Copyright */}
+        <p className="text-center text-xs text-blue-600  font-serif italic sm:text-left">
+          © {new Date().getFullYear()} 4darDigital Hub. All Rights Reserved.
+        </p>
 
+        {/* Brand */}
+        <div className="text-sm  tracking-wide  text-blue-600  font-bold">
+          4darDigital 
+        </div>
+
+         {/* Project Section */}
+        
         <a
-        data-aos="flip-left"
-          href="https://wa.me/6283125307355"
+        href="https://web-4dadigital.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex justify-center items-center gap-1 hover:text-green-400 transition font-serif font-semibold"
+          className="flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-xs text-white transition hover:scale-105 font-semibold font-space"
         >
-          <FaWhatsapp className="text-2xl my-1 " />
-          +6283125307355
+          <FaLink className="text-base" />
+          Klik Projek Kami
         </a>
 
-        <a
-        data-aos="flip-left"
-          href="https://instagram.com/awng_drmwn"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex justify-center items-center gap-1 hover:text-pink-400 transition font-serif font-semibold"
-        >
-          <FaInstagram className="text-2xl my-1" />
-          @awng_drmwn
-        </a>
+       
       </div>
-    </div>
+    </footer>
   );
 }
-
-export default Footer;

@@ -24,7 +24,7 @@ export default function Gallerysection() {
            "
 
         >
-          Our Gallery
+          Gallery
         </h2>
       </div>
 
@@ -51,6 +51,7 @@ export default function Gallerysection() {
               bg-white
               shadow-lg
               aspect-[3/4]
+              rounded-2xl
             "
           >
             <img
@@ -63,6 +64,7 @@ export default function Gallerysection() {
                 transition-all
                 duration-500
                 hover:scale-110
+                
               "
             />
           </div>

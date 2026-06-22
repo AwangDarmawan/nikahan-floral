@@ -26,7 +26,7 @@ export default function Akad({
     >
       {/* Decoration */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-8 text-7xl">❀</div>
+        <div className="absolute top-10 left-8 text-7xl ">❀</div>
         <div className="absolute top-10 right-8 text-7xl">❀</div>
         <div className="absolute bottom-10 left-8 text-7xl">❀</div>
         <div className="absolute bottom-10 right-8 text-7xl">❀</div>

@@ -9,9 +9,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 AOS.init({
-  duration: 1000,
-  once: true,
-    offset: 50,
+  duration: 1400,
+  easing: "ease-out-cubic",
+  once: false,
+  mirror: true,
+  offset: 80,
 });
 createRoot(document.getElementById('root')).render(
   <StrictMode>
