@@ -3,6 +3,7 @@ import Form from "./Form";
 import Preview from "./Preview";
 import { generateInvitationLink, generateShareText } from "./Share";
 import Footer from "../Footer";
+// import Footer from "../Footer";
 // import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Admin = () => {
